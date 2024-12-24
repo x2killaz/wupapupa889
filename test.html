@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="source/css/test.css">
+    <title>Тест</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="header-left">
+                <p>METAL GEAR</p>
+            </div>
+            <div class="header-right">
+                <a href="index.html">Описание</a>
+                <a href="Slovar.html">Словрь</a>
+                <a href="test.html" class="active">Тест</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="profile.html" id="username">Личный кабинет</a>
+                <div class="logout-section" id="logout-section">
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1 class="top-pagename">Тест</h1>
+        <section class="central-content">
+            <h2>Тест по METAL GEAR</h2>
+
+            <form id="quizForm" name="quizForm" novalidate>
+                <fieldset>
+                    <label for="q1">1. Как зовут главного персонажа, которым управляет игрок?</label>
+                    <input type="text" id="q1" name="q1">
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <label for="q2">2. Как нызывается главный босс?</label>
+                    <input type="text" id="q2" name="q2">
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Радиопостановка строилась в какой стране?</legend>
+                    <label><input type="radio" name="q3" value="Япония"> Япония</label>
+                    <label><input type="radio" name="q3" value="Китай"> Китай</label>
+                    <label><input type="radio" name="q3" value="Россия"> Россия</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4. Шагоходы, служат для чего?</legend>
+                    <label><input type="radio" name="q4" value="Запуска ракет"> Запуска ракет</label>
+                    <label><input type="radio" name="q4" value="Чтоб шагали"> Чтоб шагали</label>
+                    <label><input type="radio" name="q4" value="Смотреть на небо"> Смотреть на небо</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>5. Сколько частей в METAL GEAR?</legend>
+                    <label><input type="radio" name="q5" value="3"> 3</label>
+                    <label><input type="radio" name="q5" value="5"> 5</label>
+                    <label><input type="radio" name="q5" value="7"> 7</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>6. Главная задача игры?</legend>
+                    <label><input type="radio" name="q6" value="Остановить ракеты"> Остановить ракеты</label>
+                    <label><input type="radio" name="q6" value="Запустить ракеты"> Запустить ракеты</label>
+                    <label><input type="radio" name="q6" value="Посмотреть на ракеты"> Посмотреть на ракеты</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <div class="result-section">
+                    <span id="test-result"></span>
+                </div>
+
+                <button type="submit" id="submit-button">Ответить</button>
+            </form>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="socials-container">
+            <div class="contact-info">
+                               <p>&copy; 2024 Черкасов Андрей. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="source/js/script.js"></script>
+    <script src="source/js/test.js"></script>
+</body>
+
+</html>
